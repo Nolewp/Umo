@@ -29,8 +29,7 @@ const appendMenuItems = (lt, div) => {
     itemHldr.innerText = '';
     itemHldr.classList.add("menuItemDiv")
 
-    lt.forEach(element => {
-        
+    lt.forEach(element => {       
         let food = element[0];
         let price = element[1];
         console.log(food)
