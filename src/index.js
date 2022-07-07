@@ -2,14 +2,17 @@
 import './style.css';
 import {loadNav} from './navigation';
 import {loadBillbord} from './billbord';
+import {loadMenu} from './menu';
 
 
-loadNav()
+loadNav();
+let billbord = loadBillbord();
+let menu = loadMenu();
 
 
 const main = document.getElementById("main");
 const menuBtn = document.querySelector(".menuBtn");
-const umoBtn = document.querySelector(".umoBtn")
+const umoBtn = document.querySelector(".umoBtn");
 
 
 const makeDiv = () => {
@@ -28,19 +31,20 @@ function removeChildren(d) {
 main.appendChild(makeDiv());
 let pageBdy = document.querySelector(".pageBdy");
 
-pageBdy.appendChild(loadBillbord());
+pageBdy.appendChild(billbord);
 
 
 
 menuBtn.addEventListener("click", () => {
     let pageBdy = document.querySelector(".pageBdy");
     removeChildren(pageBdy);
+    pageBdy.appendChild(menu)
     console.log("remove page body");
 })
 umoBtn.addEventListener("click", () => {
     let pageBdy = document.querySelector(".pageBdy");
     removeChildren(pageBdy);
-    pageBdy.appendChild(loadBillbord());
+    pageBdy.appendChild(billbord);
     console.log("remove page body");
 })
 
