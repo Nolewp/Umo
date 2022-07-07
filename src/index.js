@@ -7,7 +7,7 @@ import {loadMenu} from './menu';
 
 loadNav();
 let billbord = loadBillbord();
-let menu = loadMenu();
+
 
 
 const main = document.getElementById("main");
@@ -38,6 +38,7 @@ pageBdy.appendChild(billbord);
 menuBtn.addEventListener("click", () => {
     let pageBdy = document.querySelector(".pageBdy");
     removeChildren(pageBdy);
+    let menu = loadMenu();
     pageBdy.appendChild(menu)
     console.log("remove page body");
 })
