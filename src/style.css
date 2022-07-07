@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    width: 100vw;
+    background-color: black;
+    padding: 10px;
+    color: rgb(56, 121, 177);
+}
+.nav > * {
+    color: wheat;
+    margin-left: 2vw;
+}
+
+.nav > *:hover {
+    color: rgb(33, 48, 95);
+}
+
+.umoBtn {
+    font-size: larger;
+    color: rgb(196, 255, 206);
+}
+
+.nav > button {
+    background-color: transparent;
+}
+
+.pageBdy {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 50vh;
+    background: url('./images/burger.png');
+}
+.banner {
+    margin: 0;
+    padding-top: 3vh;
+    text-align: center;
+    background-color: transparent;
+    color: aliceblue;
+}
