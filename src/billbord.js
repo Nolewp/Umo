@@ -1,3 +1,5 @@
+import {changeToMenu} from './index';
+
 const holder = () => {
     let hldr = document.createElement("div")
     hldr.innerText = '';
@@ -17,8 +19,14 @@ const content = (div) => {
     pOne.innerText = "We have a full menu of dishes just waiting for you to try!";
     div.appendChild(pOne)
 
+    let navmenu = document.createElement('button');
+    navmenu.classList.add("bannerBtn");
+    navmenu.textContent = "See what we are cooking";
+    div.appendChild(navmenu)
+
     return div
 }
+
 const loadBillbord = () => {
     let bandiv = holder();
     content(bandiv);

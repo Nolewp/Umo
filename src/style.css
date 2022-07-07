@@ -44,8 +44,18 @@ body {
     background-color: transparent;
     color: aliceblue;
 }
+.bannerBtn {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    width: 40vw;
+    text-align: center;
+}
 .menu {
     margin: 0;
+    text-align: center;
+    color: white;
+    font-size: large;
+
 }
 
 .menuItemDiv {

@@ -15,6 +15,7 @@ const menuBtn = document.querySelector(".menuBtn");
 const umoBtn = document.querySelector(".umoBtn");
 
 
+
 const makeDiv = () => {
     const mainbody =  document.createElement("div");
     mainbody.textContent = '';
@@ -32,16 +33,24 @@ main.appendChild(makeDiv());
 let pageBdy = document.querySelector(".pageBdy");
 
 pageBdy.appendChild(billbord);
+const bannerBtn = document.querySelector(".bannerBtn");
 
-
-
-menuBtn.addEventListener("click", () => {
+const changeToMenu = () => {
     let pageBdy = document.querySelector(".pageBdy");
     removeChildren(pageBdy);
     let menu = loadMenu();
     pageBdy.appendChild(menu)
     console.log("remove page body");
+}
+
+menuBtn.addEventListener("click", () => {
+    changeToMenu();
 })
+
+bannerBtn.addEventListener("click", () => {
+    changeToMenu();
+})
+
 umoBtn.addEventListener("click", () => {
     let pageBdy = document.querySelector(".pageBdy");
     removeChildren(pageBdy);
