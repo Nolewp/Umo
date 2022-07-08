@@ -7,20 +7,31 @@ const holder = () => {
 }
 
 
-const h1content = (div) => {
-    let hOne = document.createElement("h1");
-    hOne.classList.add("menu");
-    hOne.innerText = "Menu";
-    div.appendChild(hOne)
-
-    return div
+const h1content = () => {
+    let hOne = document.createElement("h3");
+    hOne.classList.add("mainCourse");
+    hOne.innerText = "Main Course";
+    return hOne
 }
+const startersDiv = () => {
+    let starters = document.createElement("h3");
+    starters.classList.add("startersCourse");
+    starters.innerText = "Starters";
+    return starters
+}   
 
-let menuArray = [
-    ["Lasagna", 15.99],
-    ["Spaghetti", 16.99],
-    ["Veal", 16.99],
-    ["Burger", 12.99],
+let mainArray = [
+    ["Lasagna", 15],
+    ["Spaghetti", 16],
+    ["Veal", 16],
+    ["Burger", 12],
+];
+
+let startArray = [
+    ["Salad", 15],
+    ["Soup", 16],
+    ["Tacos", 16],
+    ["Clams", 12],
 ];
 
 const appendMenuItems = (lt, div) => {
@@ -36,18 +47,23 @@ const appendMenuItems = (lt, div) => {
         itemHldr.innerHTML += `
         <a id="menuItem">
             <div id="item">
-                <p id="food"> ${food}</p>
-                <p id="price">${price}</p>
+                <p id="food"> ${food} ${price} </p>
             </div>
         </a>`;});
     div.appendChild(itemHldr)
     return div
 }
 
+const addtoMain = () => {
+
+}
+
 const loadMenu = () => {
     let bandiv = holder();
-    h1content(bandiv);
-    appendMenuItems(menuArray, bandiv);
+    let start = appendMenuItems(startArray, h1content());
+    let mainCourse = appendMenuItems(mainArray, startersDiv());
+    bandiv.appendChild(start);
+    bandiv.appendChild(mainCourse);
     return bandiv;
 }
 
