@@ -16,7 +16,7 @@ body, body> * {
 }
 
 .nav > *:hover {
-    color: rgb(33, 48, 95);
+    color:rgb(239, 235, 231)
 }
 
 .umoBtn {
@@ -24,8 +24,9 @@ body, body> * {
     color: rgb(196, 255, 206);
 }
 
-.nav > button {
+.nav > * {
     background-color: transparent;
+    border: none;
 }
 
 .pageBdy {
@@ -42,16 +43,25 @@ body, body> * {
     padding-top: 3vh;
     text-align: center;
     background-color: transparent;
-    color: aliceblue;
+    color: bisque;
 }
 .bannerBtn {
     margin-left: 30vw;
     margin-right: 30vw;
+    margin-top: 5vh;
     width: 40vw;
+    color:bisque;
     text-align: center;
+    font-size: larger;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: aliceblue;
+    background-color: rgba(163, 159, 159, 0.3);
 }
 .menu {
     margin: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     text-align: center;
     color: white;
     font-size: large;
