@@ -3,6 +3,7 @@ import './style.css';
 import {loadNav} from './navigation';
 import {loadBillbord} from './billbord';
 import {loadMenu} from './menu';
+import { loadFooter } from './footer';
 
 
 loadNav();
@@ -30,6 +31,8 @@ function removeChildren(d) {
 }
 
 main.appendChild(makeDiv());
+main.appendChild(loadFooter());
+
 let pageBdy = document.querySelector(".pageBdy");
 
 pageBdy.appendChild(billbord);
