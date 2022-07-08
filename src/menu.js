@@ -62,8 +62,9 @@ const loadMenu = () => {
     let bandiv = holder();
     let start = appendMenuItems(startArray, h1content());
     let mainCourse = appendMenuItems(mainArray, startersDiv());
-    bandiv.appendChild(start);
     bandiv.appendChild(mainCourse);
+    bandiv.appendChild(start);
+    
     return bandiv;
 }
 
