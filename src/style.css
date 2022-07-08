@@ -58,7 +58,7 @@ body, body> * {
     border-color: aliceblue;
     background-color: rgba(163, 159, 159, 0.3);
 }
-.menu {
+.menuDiv > h3 {
     margin: 0;
     padding-top: 2vh;
     padding-bottom: 2vh;
