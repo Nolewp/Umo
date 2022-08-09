@@ -60,10 +60,11 @@ const addtoMain = () => {
 
 const loadMenu = () => {
     let bandiv = holder();
-    let start = appendMenuItems(startArray, h1content());
-    let mainCourse = appendMenuItems(mainArray, startersDiv());
-    bandiv.appendChild(mainCourse);
+    let start = appendMenuItems(startArray,  startersDiv());
+    let mainCourse = appendMenuItems(mainArray, h1content());
     bandiv.appendChild(start);
+    bandiv.appendChild(mainCourse);
+    
     
     return bandiv;
 }
