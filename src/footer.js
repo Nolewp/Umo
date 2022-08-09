@@ -21,7 +21,8 @@ const footHours = (div) => {
 
     const hours1 = document.createElement('p');
     hours1.innerText = 'Monday - Thursday: 11AM - 10PM';
-    hoursDiv.appendChild(hours1);
+    hoursDiv.appendChild(hours1); 
+    
 
     const hours2 = document.createElement('p');
     hours2.innerText = ' ';
